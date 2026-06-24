@@ -24,18 +24,6 @@ export default [
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      "no-restricted-imports": [
-        "error",
-        {
-          paths: [
-            {
-              name: "server-only",
-              message:
-                "TanStack Start does not use the Next.js `server-only` package. Rename the module to `*.server.js` or mark it with `@tanstack/react-start/server-only`.",
-            },
-          ],
-        },
-      ],
       "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
       "no-unused-vars": "off",
     },

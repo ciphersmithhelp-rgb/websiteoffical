@@ -1,12 +1,8 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Nav, Footer, PurpleDust } from "../../components/Shared";
 import { ArrowLeft, Hammer } from "lucide-react";
 
-export const Route = createFileRoute("/products/forge")({
-  component: ForgeProductPage,
-});
-
-function ForgeProductPage() {
+export default function ForgeProductPage() {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-background">
       <PurpleDust />

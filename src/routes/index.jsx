@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Logo, Nav, Contact, Footer, PurpleDust } from "../components/Shared";
 import { useState, useEffect, useCallback } from "react";
 import emailjs from "@emailjs/browser";
@@ -240,45 +240,6 @@ function StudiosCard() {
     </>
   );
 }
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      {
-        title: "CipherSmith — Code. Create. Conquer.",
-      },
-      {
-        name: "description",
-        content:
-          "CipherSmith is a digital forge building intelligent products, AI systems, and premium digital experiences for the next era.",
-      },
-      {
-        property: "og:title",
-        content: "CipherSmith — Code. Create. Conquer.",
-      },
-      {
-        property: "og:description",
-        content: "A premium technology forge crafting intelligent products and digital solutions.",
-      },
-    ],
-    links: [
-      {
-        rel: "preconnect",
-        href: "https://fonts.googleapis.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
-        crossOrigin: "",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap",
-      },
-    ],
-  }),
-  component: Index,
-});
 function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-32 pb-12">
@@ -899,7 +860,7 @@ function CTA() {
   );
 }
 
-function Index() {
+export default function Index() {
   const [activeSection, setActiveSection] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

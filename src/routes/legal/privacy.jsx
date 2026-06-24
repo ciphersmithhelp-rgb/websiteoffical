@@ -1,11 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Nav, Footer } from "../studios";
+import { Nav, Footer } from "../../routes/studios";
 
-export const Route = createFileRoute("/legal/privacy")({
-  component: PrivacyPage,
-});
-
-function PrivacyPage() {
+export default function PrivacyPage() {
   return (
     <div className="studios-theme">
       <main className="studios-bg-forge relative min-h-screen flex flex-col">

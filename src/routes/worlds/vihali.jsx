@@ -1,13 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Nav, Footer } from "../studios";
 import gameVihali from "@/assets/game-vihali.jpg";
 import { ArrowLeft } from "lucide-react";
 
-export const Route = createFileRoute("/worlds/vihali")({
-  component: VihaliPage,
-});
-
-function VihaliPage() {
+export default function VihaliPage() {
   return (
     <div className="studios-theme">
       <main className="studios-bg-forge relative min-h-screen flex flex-col">

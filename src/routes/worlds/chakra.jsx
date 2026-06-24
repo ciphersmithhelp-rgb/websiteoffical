@@ -1,13 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Nav, Footer } from "../studios";
 import gameChakra from "@/assets/game-chakra.jpg";
 import { ArrowLeft } from "lucide-react";
 
-export const Route = createFileRoute("/worlds/chakra")({
-  component: ChakraPage,
-});
-
-function ChakraPage() {
+export default function ChakraPage() {
   return (
     <div className="studios-theme">
       <main className="studios-bg-forge relative min-h-screen flex flex-col">

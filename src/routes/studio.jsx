@@ -1,11 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Nav, Footer } from "./studios";
 
-export const Route = createFileRoute("/studio")({
-  component: StudioPage,
-});
-
-function StudioPage() {
+export default function StudioPage() {
   return (
     <div className="studios-theme">
       <main className="studios-bg-forge relative min-h-screen flex flex-col">

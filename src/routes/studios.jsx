@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -15,30 +15,6 @@ import gameVihali from "@/assets/game-vihali.jpg";
 import gameKochuni from "@/assets/game-kochuni.jpg";
 import gameChakra from "@/assets/game-chakra.jpg";
 import studioForge from "@/assets/studio-forge.jpg";
-
-export const Route = createFileRoute("/studios")({
-  head: () => ({
-    meta: [
-      { title: "CipherSmith Studios — We Forge Legends" },
-      {
-        name: "description",
-        content:
-          "A digital forge crafting cinematic AAA worlds inspired by mythology, imagination and technology.",
-      },
-      { property: "og:title", content: "CipherSmith Studios — We Forge Legends" },
-      { property: "og:description", content: "A digital forge crafting cinematic AAA worlds." },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600&display=swap",
-      },
-    ],
-  }),
-  component: StudiosPage,
-});
 
 export const CIPHERSMITH_MAIN_URL = "/";
 export const STUDIOS_SUBSCRIBE_URL = "https://script.google.com/macros/s/AKfycbyLEUqw76SqId1FhXOniQrSsX12NJiN2ggTVBjDVG_RBOP-FnuqDzdrOibcf7MOwuUgDw/exec";
@@ -817,7 +793,7 @@ export function Footer() {
   );
 }
 
-function StudiosPage() {
+export default function StudiosPage() {
   return (
     <div className="studios-theme">
       <main className="studios-bg-forge relative min-h-screen">

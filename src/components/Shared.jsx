@@ -356,7 +356,7 @@ export function Footer() {
           </p>
           <div className="mt-6 flex gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/ciphersmithhelp-rgb"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
@@ -365,7 +365,7 @@ export function Footer() {
               <Github className="h-4 w-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/cipher-smith-4b7380419/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
@@ -374,7 +374,7 @@ export function Footer() {
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/CipherSmith_lab"
               target="_blank"
               rel="noreferrer"
               aria-label="X (Twitter)"
